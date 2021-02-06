@@ -1,0 +1,22 @@
+import java.util.*;
+ 
+class MakeAPattern
+{
+ 
+public static void main(String[] args)
+{
+    int i, j, min;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Value of K:");
+    int K=sc.nextInt();  
+    for (i = 1; i <= K; i++)  
+    {
+        for (j = 1; j <= K; j++)  
+        {
+            min = i < j ? i : j;
+            System.out.print(K - min + 1);
+        }
+        System.out.println();
+    }
+}
+} 
